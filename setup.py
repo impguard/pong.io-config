@@ -14,7 +14,6 @@ requires = [
     'flake8==3.5.0',
 ]
 
-
 setup(
     name='pconf',
     version=version,
