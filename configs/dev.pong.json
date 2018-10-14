@@ -19,7 +19,7 @@
     },
     "player": {
       "speed": 0.15,
-      "health": 10
+      "health": 20
     },
     "paddle": {
       "width": 15,
@@ -34,11 +34,11 @@
         "angle": -50
       },
       "swing": {
-        "speed": 0.7,
+        "speed": 0.9,
         "angle": 65
       },
       "reset": {
-        "speed": 0.3
+        "speed": 0.4
       }
     },
     "cover": {
@@ -46,7 +46,7 @@
       "height": 15,
       "offset": 30
     },
-    "numBalls": 7,
+    "numBalls": 4,
     "numPlayers": 10,
     "delta": 16
   },
