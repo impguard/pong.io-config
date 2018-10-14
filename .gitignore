@@ -3,3 +3,4 @@ __pycache__
 pconf.egg-info/
 dist/
 venv/
+build/
