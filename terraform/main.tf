@@ -22,17 +22,4 @@ resource "aws_dynamodb_table" "config" {
     name = "Id"
     type = "S"
   }
-
-  attribute {
-    name = "Config"
-    type = "S"
-  }
-
-  attribute {
-    name = "UpdatedAt"
-  }
-
-  attribute {
-    name = "CreatedAt"
-  }
 }
