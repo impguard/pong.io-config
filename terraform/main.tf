@@ -12,4 +12,27 @@ terraform {
   }
 }
 
-# AWS DynamoDB table
+resource "aws_dynamodb_table" "config" {
+  name           = "PongConfiguration"
+  read_capacity  = 20
+  write_capacity = 20
+  hash_key       = "Id"
+
+  attribute {
+    name = "Id"
+    type = "S"
+  }
+
+  attribute {
+    name = "Config"
+    type = "S"
+  }
+
+  attribute {
+    name = "UpdatedAt"
+  }
+
+  attribute {
+    name = "CreatedAt"
+  }
+}
