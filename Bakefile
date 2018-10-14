@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 bake_task install "Installs pconf"
 function install {
   if ! command -v python3 >/dev/null; then
@@ -13,7 +12,7 @@ function install {
   source venv/bin/activate
   python setup.py install
 
-  sudo ln -s "$PWD/venv/bin/pconf" "/usr/local/bin/pconf"
+  sudo ln -sf "$PWD/venv/bin/pconf" "/usr/local/bin/pconf"
 }
 
 bake_task uninstall "Uninstalls pconf"
