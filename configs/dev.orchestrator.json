@@ -1,4 +1,5 @@
 {
+  "id": "dev.orchestrator",
   "ecs": {
     "cluster": ""
   }

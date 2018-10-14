@@ -1,0 +1,4 @@
+arrow==0.12.1
+pynamodb==3.3.1
+docopt==0.6.2
+flake8==3.5.0

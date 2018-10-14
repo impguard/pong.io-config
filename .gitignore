@@ -1,1 +1,4 @@
 .terraform
+__pycache__
+pconf.egg-info/
+dist/
