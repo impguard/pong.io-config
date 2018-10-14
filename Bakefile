@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+bake_task install "Installs pconf"
+function install {
+  if ! command -v python3 >/dev/null; then
+    bake_echo_red "Please install python3!"
+    exit 1
+  fi
+
+  test -d venv || python3 -m venv venv
+
+  source venv/bin/activate
+  python setup.py install
+
+  sudo ln -s "$PWD/venv/bin/pconf" "/usr/local/bin/pconf"
+}
+
+bake_task uninstall "Uninstalls pconf"
+function uninstall {
+  sudo rm -rf "/usr/local/bin/pconf"
+}
